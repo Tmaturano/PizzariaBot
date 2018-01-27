@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PizzariaHelloWorld.Dialogs
 {
     [Serializable]
-    [QnAMaker(subscriptionKey: "687fba498e4b4f6494062f70c93dc55d", knowledgebaseId: "ff27ec6b-6cf1-41f0-8f34-32a74b429d59", defaultMessage: "Frase padrão para quando não satisfazer ao índice mínimo de confiabilidade.", scoreThreshold: 0.5, top: 1)]
+    [QnAMaker(subscriptionKey: "put your subscription key here", knowledgebaseId: "put your knowledgebaseid here", defaultMessage: "Frase padrão para quando não satisfazer ao índice mínimo de confiabilidade.", scoreThreshold: 0.5, top: 1)]
     public class QnaDialog : QnAMakerDialog
     {
         protected override async Task RespondFromQnAMakerResultAsync(IDialogContext context, IMessageActivity message, QnAMakerResults result)
